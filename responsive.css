@@ -4,7 +4,6 @@
     body {
         width: 100%;
     }
-
     .first {
         width: 100%;
         height: 100%;
@@ -25,7 +24,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin: 1.2rem;
+        margin: 2rem 1.2rem 0 1.2rem;
     }
 
     .logo svg {
@@ -37,10 +36,12 @@
         justify-content: space-between;
         padding: 1.2rem;
         height: 100%;
+        margin-top: 0.2rem;
     }
 
     .big-content {
         width: 100%;
+        margin-top: 1rem;
     }
 
     .image-01 {
@@ -134,45 +135,56 @@
     .item6 {
         display: none;
     }
+
     .headings {
         width: 100%;
     }
+
     .headings h1 {
         margin: 1.2rem;
     }
-    
+
     .headings p {
         margin: 1.2rem;
     }
+
     .calculator {
         flex-direction: column;
         align-items: center;
     }
+
     .calculator div:nth-child(1) {
         width: 100%;
         margin: 1.2rem;
         padding: 1.2rem;
     }
+
     .calculator div:nth-child(2) {
         margin: 1.2rem;
         padding: 1.2rem;
         width: 100%;
     }
+
     .calculator div:nth-child(2) p {
         width: 90%;
     }
-    form{
+
+    form {
         width: 100%;
     }
-    #calculateBMI{
+
+    #calculateBMI {
         width: 100%;
     }
+
     .sixth h1 {
         margin: 1.2rem;
     }
+
     .sixth p {
         margin: 1.2rem;
     }
+
     .six-people {
         display: flex;
         flex-direction: column;
@@ -181,32 +193,39 @@
         margin: 1.2rem 1.2rem 4rem 1.2rem;
 
     }
+
     .six-people div:nth-child(4) {
         display: none;
     }
+
     .trainer-intro h4 {
         text-align: center;
     }
+
     .trainer-intro p {
         font-size: 1.2rem;
         font-weight: 500;
         margin: 0;
         text-align: left;
     }
+
     .last-content {
         margin: 1.2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    .last-one{
+
+    .last-one {
         width: 100%;
     }
+
     .last-one p {
         width: 100%;
     }
+
     hr {
         margin: 1.2rem;
     }
-    
+
 }
