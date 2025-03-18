@@ -474,12 +474,15 @@ form input, form select{
     outline: none;
     color: #ffffff80;
 }
+form select option{
+    background-color: #222222;
+    color: #ffffff80;
+}
 form input::placeholder{
     color: #ffffff80;
 }
 form label{
-    visibility: hidden;
-    position: absolute;
+    display: none;
 }
 #calculateBMI{
     background-color: #E6533C;
