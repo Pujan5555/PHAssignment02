@@ -18,9 +18,11 @@
     font-weight: 400;
     font-style: normal;
 }
-body{
+
+body {
     background-color: #000;
 }
+
 /* Set a background color and font for the whole document */
 
 /* first section */
@@ -49,6 +51,10 @@ body{
     color: #E6533C;
     letter-spacing: 2px;
     font-style: italic;
+}
+
+.logo svg {
+    display: none;
 }
 
 .big-message {
@@ -125,12 +131,26 @@ body{
     cursor: pointer;
 }
 
-.image-01 {
-    position: relative;
+.big-content {
     width: 50%;
     height: 100%;
-    display: flex;
-    justify-content: flex-end;
+}
+
+.image-01 {
+    width: 50%;
+    height: 100%;
+}
+
+.big-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+}
+
+.big-image img {
+    width: 70%;
+    height: 100%;
 }
 
 .cards {
@@ -151,7 +171,7 @@ body{
 
 .bottom-card {
     bottom: 10%;
-    left: 30%;
+    left: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,21 +267,25 @@ body{
     background-color: #222222;
     border-radius: 1.2rem;
 }
+
 .third-content div:nth-child(1) {
     width: 50%;
     padding-left: 4rem;
 }
+
 .third-content div:nth-child(1) h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
     font-style: normal;
 }
+
 .third-content div:nth-child(1) p {
     color: #fff;
     opacity: 0.5;
     margin: 1.3rem 0 1.3rem 0;
 }
+
 .third-content div:nth-child(1) button {
     background-color: #E6533C;
     color: #fff;
@@ -272,18 +296,21 @@ body{
     cursor: pointer;
     margin: 1.3rem 0 1.3rem 0;
 }
+
 .third-content div:nth-child(2) {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .third-content div:nth-child(2) img {
     width: 80%;
     height: 70%;
     margin: 3rem 0;
     border-radius: 1.2rem;
 }
+
 /* fourth section */
 .fourth h1 {
     font-size: 3rem;
@@ -294,19 +321,23 @@ body{
     text-align: left;
     margin: 1.5rem 6rem;
 }
+
 .fourth p {
     color: #fff;
     opacity: 0.5;
     margin: 0rem 6rem;
     text-align: left;
 }
+
 .fourth h1:nth-of-type(2) {
     text-align: center;
 }
+
 .fourth p:nth-of-type(2) {
     text-align: center;
     width: 20%;
 }
+
 /* grid images */
 .grid-images {
     display: grid;
@@ -316,41 +347,50 @@ body{
     gap: 0;
 }
 
-.item1 { 
-grid-column: span 3; 
-}
-.item2 { 
-grid-column: span 6; 
-}
-.item3 { 
-grid-column: span 3; 
-}
-.item4 { 
-grid-column: span 5; 
-}
-.item5 { 
-grid-column: span 3; 
-}
-.item6 { 
-grid-column: span 4; 
+.item1 {
+    grid-column: span 3;
 }
 
-.grid-images div{
+.item2 {
+    grid-column: span 6;
+}
+
+.item3 {
+    grid-column: span 3;
+}
+
+.item4 {
+    grid-column: span 5;
+}
+
+.item5 {
+    grid-column: span 3;
+}
+
+.item6 {
+    grid-column: span 4;
+}
+
+.grid-images div {
     width: 100%;
     height: 250px;
 }
-.grid-images div img{
+
+.grid-images div img {
     width: 100%;
     height: 100%;
     margin: 0;
     filter: brightness(0.65);
-    filter:drop-shadow(0 0 2.75rem #E6533C); ;
+    filter: drop-shadow(0 0 2.75rem #E6533C);
+    ;
 }
-.grid-images div{
+
+.grid-images div {
     position: relative;
     overflow: hidden;
 }
-.grid-images div::before{
+
+.grid-images div::before {
     content: "";
     position: absolute;
     top: 0;
@@ -360,14 +400,38 @@ grid-column: span 4;
     z-index: 1;
 }
 
-.item1::before { background-color: #06ffd145; } /* Red */
-.item2::before { background-color: #ff000045; } /* Green */
-.item3::before { background-color: #cccccc45; } /* Blue */
-.item4::before { background-color: #00000045; } /* Yellow */
-.item5::before { background-color: #42FF0045; } /* Cyan */
-.item6::before { background-color: #0047FF45; } /* Magenta */
+.item1::before {
+    background-color: #06ffd145;
+}
 
-.grid-images div span{
+/* Red */
+.item2::before {
+    background-color: #ff000045;
+}
+
+/* Green */
+.item3::before {
+    background-color: #cccccc45;
+}
+
+/* Blue */
+.item4::before {
+    background-color: #00000045;
+}
+
+/* Yellow */
+.item5::before {
+    background-color: #42FF0045;
+}
+
+/* Cyan */
+.item6::before {
+    background-color: #0047FF45;
+}
+
+/* Magenta */
+
+.grid-images div span {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -375,25 +439,29 @@ grid-column: span 4;
     font-size: 16px;
     font-weight: 400;
 }
+
 /* BMI fifth section */
-.BMI{
+.BMI {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.headings{
+
+.headings {
     width: 50%;
     text-align: left;
 }
-.headings h1{
+
+.headings h1 {
     font-size: 2rem;
     font-weight: 800;
     color: #fff;
     font-style: normal;
     margin: 1.5rem 6rem;
 }
-.headings p{
+
+.headings p {
     color: #fff;
     opacity: 0.5;
     margin: 0rem 6rem;
@@ -402,7 +470,7 @@ grid-column: span 4;
 
 /* BMI calculator Grey area */
 
-.calculator{
+.calculator {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -410,62 +478,74 @@ grid-column: span 4;
     background-color: #222222;
     width: 100%;
 }
-.calculator div:nth-child(1) h3{
+
+.calculator div:nth-child(1) h3 {
     font-size: 1.5rem;
     font-weight: 800;
     color: #fff;
     font-style: normal;
-    margin:2rem 0;
+    margin: 2rem 0;
 }
-.calculator div:nth-child(1){
+
+.calculator div:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-left: 6rem;
 }
-table{
+
+table {
     border-collapse: collapse;
     text-align: left;
 }
-table tr th{
+
+table tr th {
     padding: 1rem;
     color: #ffffff;
     border: 2px solid #ffffff45;
 }
-table tr td{
+
+table tr td {
     padding: 1rem;
     color: #ffffff45;
     border: 2px solid #ffffff45;
 }
+
 /* BMI Form submission */
-.calculator div:nth-child(2){
+.calculator div:nth-child(2) {
     margin-right: 6rem;
     width: 50%;
 }
-.calculator div:nth-child(2) h3{
+
+.calculator div:nth-child(2) h3 {
     font-size: 1.5rem;
     font-weight: 800;
     color: #fff;
     font-style: normal;
-    margin:2rem 0 1rem 0;
+    margin: 2rem 0 1rem 0;
 }
-.calculator div:nth-child(2) p{
+
+.calculator div:nth-child(2) p {
     color: #fff;
     opacity: 0.5;
     margin: 0rem;
     text-align: left;
 }
-form{
+
+form {
     display: grid;
     margin-top: 4rem;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
-#activity{
+
+#activity {
     grid-column: span 2;
 }
-form input, form select{
+
+form input,
+form select {
     width: 100%;
     border: none;
     padding: 0.7rem;
@@ -474,17 +554,21 @@ form input, form select{
     outline: none;
     color: #ffffff80;
 }
-form select option{
+
+form select option {
     background-color: #222222;
     color: #ffffff80;
 }
-form input::placeholder{
+
+form input::placeholder {
     color: #ffffff80;
 }
-form label{
+
+form label {
     display: none;
 }
-#calculateBMI{
+
+#calculateBMI {
     background-color: #E6533C;
     color: #fff;
     border: none;
@@ -498,23 +582,26 @@ form label{
 
 /* meet our team 6th */
 
-.sixth{
+.sixth {
     text-align: center;
 }
-.sixth h1{
+
+.sixth h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
     text-align: center;
     margin: 1.5rem 6rem;
 }
-.sixth p{
+
+.sixth p {
     color: #fff;
     opacity: 0.5;
     margin: 0rem 6rem 3rem 6rem;
     text-align: center;
 }
-.six-people{
+
+.six-people {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: #222222;
@@ -525,16 +612,24 @@ form label{
     padding: 1.5rem;
     margin-bottom: 5rem;
 }
-.six-people div{
+
+.six-people div {
     position: relative;
     overflow: hidden;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
 }
-.six-people div img{
+
+.six-people div img {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
+    margin: 0;
 }
-.six-people div::before{
+
+.six-people div::before {
     content: "";
     position: absolute;
     top: 0;
@@ -544,72 +639,88 @@ form label{
     z-index: 1;
     background-color: #00000050;
 }
-.trainer-intro{
+
+.trainer-intro {
     position: absolute;
     left: 0;
     bottom: 0;
     padding: 1rem;
     color: #fff;
 }
-.trainer-intro h4{
+
+.trainer-intro h4 {
     font-size: 2rem;
     font-weight: 800;
     margin: 0;
     text-align: left;
 }
-.trainer-intro p{
+
+.trainer-intro p {
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
     text-align: left;
 }
+
 /* last section seven */
-.last{
+.last {
     background-color: #222222;
     border: 2px solid #222222;
 }
-.last-content{
+
+.last-content {
     margin: 5rem 6rem 5rem 6rem;
     display: flex;
     justify-content: space-between;
 }
-.last-one h1{
+
+.last-one h1 {
     font-size: 4rem;
     font-weight: 800;
     font-family: 'Inter', sans-serif;
     color: #E6533C;
     font-style: italic;
 }
-.last-one p{
+
+.last-one p {
     color: #fff;
     opacity: 0.5;
     margin: 1.5rem 0;
 }
-.last-one{
+
+.last-one {
     width: 50%;
 }
-.last-two h4, .last-three h4{
+
+.last-two h4,
+.last-three h4 {
     font-size: 1.7rem;
     font-weight: 700;
     color: #fff;
     font-style: normal;
     margin: 1.5rem 0;
 }
-.last-two ul, .last-three ul{
+
+.last-two ul,
+.last-three ul {
     list-style: none;
     padding: 0;
     font-size: 1.2rem;
 }
-.last-two li, .last-three li{
+
+.last-two li,
+.last-three li {
     color: #fff;
     opacity: 0.5;
     margin: 0.8rem 0;
 }
-hr{
+
+hr {
     border: 0.5px solid #ffffff45;
     margin: 1.5rem 6rem;
 }
-footer{
+
+footer {
     text-align: center;
     color: #ffffff45;
     margin: 2.5rem 0;
